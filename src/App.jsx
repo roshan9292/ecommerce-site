@@ -61,11 +61,13 @@ import Category from "./category"
     }
     }
 
-
+ function deleteItem(id){
+  setCartProduct(cartProduct.filter(product=>product.id != id))
+ }
   return(
   cartToggle ?
   <div className="cartPage">
-  {updatedCart.map((cartItems)=><CartProducts  product={cartItems} incCartCount={incCartCount} decCartCount={decCartCount}/>)}
+  {updatedCart.map((cartItems)=><CartProducts  product={cartItems} incCartCount={incCartCount} decCartCount={decCartCount} deleteItem={deleteItem}/>)}
   </div>
   : 
   <>

@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function CartProducts({product,incCartCount,decCartCount}){
+export default function CartProducts({product,incCartCount,decCartCount,deleteItem}){
 
   return(
     <div className="cartProducts">
@@ -13,6 +13,7 @@ export default function CartProducts({product,incCartCount,decCartCount}){
         </div>
       </div>
       <div className="rightSection">
+        <img onClick={()=>deleteItem(product.id)} className="deleteIcon" src="./images/delete.svg"/>
        <p className="cartTitle">{product.title}</p>
        <p className="priceTag">{product.price}$</p>
        <div className="pay">
