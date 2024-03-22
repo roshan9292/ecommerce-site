@@ -23,13 +23,19 @@ body{
  gap:20px;
  align-items: center;
 }
-.product>.productDetail>button{
+.addButton{
   width: max-content;
   padding: 8px;
   border-radius: 5px;
   border: 1px;
   background-color: rgb(21, 104, 64);
   color: white;
+}
+.addButton:hover{
+  background-color:green;
+}
+.addButton:active{
+  background-color: rgb(5, 87, 5);
 }
 .productDetail>p{
   background-color: rgb(0, 153, 255);

@@ -8,7 +8,7 @@ export default function Product({product,addToCart}){
     <p>{product.title}</p>
     <div className="productDetail">
      <p>{product.price}$</p>
-     <button onClick={addToCart}>Add to cart</button>
+     <button className="addButton"onClick={addToCart}>Add to cart</button>
     </div>
    </div>
   )
